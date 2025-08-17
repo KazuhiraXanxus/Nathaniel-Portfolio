@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Decorations -->
+    <div class="bg-decoration circle-1"></div>
+    <div class="bg-decoration circle-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-button" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-button" data-section="about">About</a></li>
+                <li><a href="#projects" class="nav-button" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-button" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="content-section active">
+            <div class="hero-section">
+                <h1 class="hero-title">Welcome to My Portfolio</h1>
+                <p class="hero-subtitle">Creative Developer & Designer</p>
+                <p class="hero-description">
+                    I create beautiful, functional, and user-centered digital experiences 
+                    that make a difference. Let's build something amazing together.
+                </p>
+                <button class="cta-button">View My Work</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="section-content about-content">
+                <div class="about-text-top">
+                    <p>Hello! I'm Nathaniel Constantino, a passionate and dedicated developer with a strong foundation in modern web technologies. Currently pursuing my degree in Computer Science, I've developed expertise in full-stack development and project management through hands-on experience and academic excellence.</p>
+                </div>
+                
+                <div class="about-image-container">
+                    <div class="about-image-placeholder">
+                        <img src="images/Picture.jpg" alt="Nathaniel Constantino - Professional Photo" class="profile-image">
+                    </div>
+                </div>
+                
+                <div class="about-text-bottom">
+                    <p>My technical expertise spans across <strong>JavaScript, React, Node.js, MongoDB, and Express.js</strong>, enabling me to build comprehensive web applications from concept to deployment. As a Project Manager for my current Capstone project, I've honed my leadership skills while developing innovative solutions for real-world challenges.</p>
+                    
+                    <p>I'm particularly passionate about creating user-centered digital experiences that combine functionality with aesthetic appeal. Whether it's developing e-commerce platforms, data visualization dashboards, or mobile interfaces, I approach each project with attention to detail and a commitment to clean, maintainable code.</p>
+                    
+                    <p>When I'm not coding, I enjoy staying updated with the latest industry trends, contributing to open-source projects, and exploring new technologies that can enhance my development workflow. I believe in continuous learning and always strive to deliver solutions that exceed expectations.</p>
+                    
+                    <div class="skills-highlight">
+                        <h3>Core Competencies</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">Frontend Development</div>
+                            <div class="skill-item">Backend Architecture</div>
+                            <div class="skill-item">Database Design</div>
+                            <div class="skill-item">Project Management</div>
+                            <div class="skill-item">UI/UX Design</div>
+                            <div class="skill-item">Team Leadership</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="content-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project="ecommerce">
+                    <div class="project-image">
+                        <div class="project-placeholder">📊</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Capstone</h3>
+                        <p>Ongoing Capstone Project</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Role: Project Manager</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Node.JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="dashboard">
+                    <div class="project-image">
+                        <div class="project-placeholder">🚀</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>A full-stack online store with payment integration and modern design</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.JS</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="mobile">
+                    <div class="project-image">
+                        <div class="project-placeholder">📱</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mobile App UI</h3>
+                        <p>Modern mobile interface design with seamless user experience</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Flutter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Popup Modal -->
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header">
+                    <h2 id="modal-title">Project Title</h2>
+                    <p id="modal-description">Project description</p>
+                </div>
+                <div class="screenshot-gallery">
+                    <button class="gallery-nav prev-btn" id="prev-btn">&#8249;</button>
+                    <div class="screenshots-container">
+                        <div class="screenshots-wrapper" id="screenshots-wrapper">
+                            <!-- Screenshots will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    <button class="gallery-nav next-btn" id="next-btn">&#8250;</button>
+                </div>
+                <div class="gallery-dots" id="gallery-dots">
+                    <!-- Dots will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-content">
+                <p>I'm always interested in hearing about new opportunities and projects. 
+                Whether you have a question or just want to say hi, I'd love to hear from you!</p>
+                <br>
+                <p><strong>Email:</strong> hello@yourportfolio.com</p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Location:</strong> Your City, Country</p>
+                <br>
+                <p>Follow me on social media for updates on my latest work and thoughts on web development.</p>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Xanxus.Kazuhira" target="_blank" rel="noopener noreferrer" class="social-link facebook">
+                        <div class="social-icon">📘</div>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/kazuhira_nathan/" target="_blank" rel="noopener noreferrer" class="social-link instagram">
+                        <div class="social-icon">📷</div>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
