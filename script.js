@@ -182,34 +182,6 @@
                     },
                     // Add more or modify as needed
                 ]
-            },
-            mobile: {
-                title: "Mobile App UI",
-                description: "Modern mobile interface design with seamless user experience, smooth animations, and intuitive navigation. Built with React Native and Firebase.",
-                screenshots: [
-                    { 
-                        image: "images/MobileProfile.jpg",      // ← Replace with your actual filename
-                        title: "Home Screen",
-                        fallback: "📱" 
-                    },
-                    { 
-                        image: "images/MobileCart.jpg",      // ← Replace with your actual filename
-                        title: "Navigation Menu",
-                        fallback: "👆" 
-                    },
-                                        { 
-                        image: "images/MobileItems.jpg",      // ← Replace with your actual filename
-                        title: "Home Screen",
-                        fallback: "📱" 
-                    },
-                    { 
-                        image: "images/MobileWidget.jpg",      // ← Replace with your actual filename
-                        title: "Navigation Menu",
-                        fallback: "👆" 
-                    },
-                    
-                    // Add more screenshots as needed
-                ]
             }
         };
 
