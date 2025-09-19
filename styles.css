@@ -646,14 +646,14 @@ h1, h2, h3, .logo {
 }
 
 .featured-text h4 {
-    color: var(--white);
+    color: var(--black);
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
 }
 
 .featured-text p {
-    color: var(--white);
+    color: var(--text-gray);
     font-size: 1rem;
     line-height: 1.5;
 }
