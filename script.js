@@ -48,9 +48,9 @@
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 100) {
-                navbar.style.background = 'rgba(51, 51, 51, 0.98)';
+                navbar.style.background = 'rgba(245, 245, 220, 0.98)';
             } else {
-                navbar.style.background = 'rgba(51, 51, 51, 0.95)';
+                navbar.style.background = 'rgba(245, 245, 220, 0.95)';
             }
         });
 
@@ -81,7 +81,7 @@
         const projectData = {
             ecommerce: {
                 title: "Capstone",
-                description: "Interactive data visualization dashboard with real-time updates, custom charts, and comprehensive reporting features. Built with Vue.js and D3.js.",
+                description: "Interactive data visualization dashboard with real-time updates, custom charts, and comprehensive reporting features. Built with MongoDB, Express.js, React, and Node.js.",
                 screenshots: [
                     { 
                         image: "images/User_Landing Page.png",     // ← Replace with your actual filename
@@ -243,7 +243,7 @@
                     slide.innerHTML = `
                         <img src="${screenshot.image}" 
                             alt="${screenshot.title}" 
-                            style="width: 100%; height: 100%; object-fit: cover;"
+                            style="width: 100%; height: 100%; object-fit: contain; object-position: center; background: rgba(255,255,255,0.1);"
                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="screenshot-placeholder" style="display: none;">
                             <div style="font-size: 4rem;">${screenshot.fallback || '📷'}</div>
