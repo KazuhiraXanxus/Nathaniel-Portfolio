@@ -197,6 +197,19 @@
             });
         });
 
+        // Also add event listeners for featured projects
+        const featuredProjects = document.querySelectorAll('.featured-project');
+        featuredProjects.forEach(card => {
+            card.addEventListener('click', function() {
+                const projectId = this.getAttribute('data-project');
+                currentProject = projectData[projectId];
+                
+                if (currentProject) {
+                    openModal(currentProject);
+                }
+            });
+        });
+
         function openModal(project) {
             document.getElementById('modal-title').textContent = project.title;
             document.getElementById('modal-description').textContent = project.description;
